@@ -1,0 +1,22 @@
+body {
+    background: #efefef;
+}
+a {
+    text-decoration: none !important;
+}
+.toolbar {
+    background: #2196f3 !important;
+    color: #fff !important;
+}
+.icon-white {
+    color: #fff !important;
+}
+.login-box {
+    margin-top: 3% !important;
+}
+.marginL20{
+    margin-left: 20px !important;
+}
+.marginR20{
+    margin-right: 20px !important;
+}
