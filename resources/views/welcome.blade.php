@@ -22,7 +22,6 @@
                     <lx-text-field label="Password" fixed-label="true" icon="eye">
                         <input type="password" ng-model="input.password" required>
                     </lx-text-field>
-
                     <div class="md-padding">
 
                         <div class="checkbox marginL20 pull-left" style="margin-top: 5px;">
@@ -30,8 +29,7 @@
                             <label for="checkbox1" class="checkbox__label">Remember me</label>
                         </div>
 
-                        <button type="submit" class="btn btn--m btn--blue btn--raised pull-right" lx-ripple>Login
-                        </button>
+                        <button type="submit" class="btn btn--m btn--blue btn--raised pull-right" lx-ripple>Login</button>
                     </div>
                 </md-card-content>
             </md-card>

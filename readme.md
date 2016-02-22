@@ -17,7 +17,7 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at poosan9@gmail.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Laravel, please send an e-mail to Poovarasan Vasudevan at poosan9@gmail.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
