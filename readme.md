@@ -13,8 +13,10 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 ## Artisan Commands
  phoenix
  ```
+     phoenix:assignrole   Assign Roles to the User
      phoenix:createrole   Creates New Role
      phoenix:createuser   Creates new User
+     phoenix:getroles     List all the roles for the user
 
  ```
 
