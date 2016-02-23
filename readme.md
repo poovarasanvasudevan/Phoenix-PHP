@@ -12,9 +12,10 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 ## Artisan Commands
  phoenix
+ ```
      phoenix:createrole   Creates New Role
      phoenix:createuser   Creates new User
-
+ ```
 
 ## Contributing
 
