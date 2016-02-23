@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +25,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+    Route::get('/', "IndexController@welcome");
+    Route::get('/logout', "IndexController@logout");
+    Route::get('/dashboard', "IndexController@dashboard");
+    Route::get("/login/{username}/{password}", "IndexController@loginValidate");
 });

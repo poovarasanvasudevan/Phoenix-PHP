@@ -1787,11 +1787,15 @@
       <column name="id" sqlType="serial" precision="10" scale="0" nullable="false" jdbcType="4" def="bmV4dHZhbCgndXNlcnNfaWRfc2VxJzo6cmVnY2xhc3Mp" autoIncrement="true"/>
       <column name="name" sqlType="varchar" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="email" sqlType="varchar" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="abyasiid" sqlType="varchar" precision="255" scale="0" nullable="false" jdbcType="12"/>
       <column name="password" sqlType="varchar" precision="60" scale="0" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="varchar" precision="60" scale="0" nullable="true" jdbcType="12"/>
+      <column name="mobilenumber" sqlType="varchar" precision="60" scale="0" nullable="true" jdbcType="12"/>
       <column name="remember_token" sqlType="varchar" precision="100" scale="0" nullable="true" jdbcType="12"/>
       <column name="created_at" sqlType="timestamp" precision="22" scale="0" nullable="true" jdbcType="93"/>
       <column name="updated_at" sqlType="timestamp" precision="22" scale="0" nullable="true" jdbcType="93"/>
       <primary-key name="users_pkey" columns="id"/>
+      <index name="users_abyasiid_unique" unique="true" columns="abyasiid"/>
       <index name="users_email_unique" unique="true" columns="email"/>
     </table>
     <table name="users_id_seq" schema="public" catalog="phoenix-php" type="SEQUENCE">
@@ -20256,6 +20260,13 @@
         <parameter name="$1" sqlType="text" precision="0" scale="0" nullable="true" jdbcType="12" type="1" index="1"/>
         <parameter name="$2" sqlType="xml" precision="0" scale="0" nullable="true" jdbcType="2009" type="1" index="2"/>
         <parameter name="returnValue" sqlType="bool" precision="0" scale="0" nullable="true" jdbcType="-7" type="5" index="0"/>
+      </prototype>
+    </procedure>
+    <procedure name="login_validate" schema="public" catalog="phoenix-php" type="2">
+      <prototype>
+        <parameter name="usernamein" sqlType="text" precision="0" scale="0" nullable="true" jdbcType="12" type="1" index="1"/>
+        <parameter name="passwordin" sqlType="text" precision="0" scale="0" nullable="true" jdbcType="12" type="1" index="2"/>
+        <parameter name="returnValue" sqlType="int4" precision="0" scale="0" nullable="true" jdbcType="4" type="5" index="0"/>
       </prototype>
     </procedure>
   </data-source>

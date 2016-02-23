@@ -9,11 +9,13 @@
     </div>
 
 
-    <div class="login-box">
+    <div class="login-box" ng-controller="logincontroller">
 
-        <form name="login-form" id="login-form" method="post" class="col-md-4 md-padding col-md-offset-4">
+        <form name="login-form" ng-submit="submit()" id="login-form" method="post"
+              class="col-md-4 md-padding col-md-offset-4">
 
-            {!! Html::image("img/logo.png","logo",["class"=>"center-block img-responsive","disabled"=>"disabled"]) !!}<br/>
+            {!! Html::image("img/logo.png","logo",["class"=>"center-block img-responsive","disabled"=>"disabled"]) !!}
+            <br/>
             <md-card class="md-margin marginL20 marginR20">
                 <md-card-content class="md-padding">
                     <lx-text-field label="Email or Abyasi Id" fixed-label="true" icon="account">
@@ -27,8 +29,13 @@
                             <input type="checkbox" id="checkbox1" ng-model="input.rememberme" class="checkbox__input">
                             <label for="checkbox1" class="checkbox__label">Remember me</label>
                         </div>
-                        <button type="submit" class="btn btn--m btn--blue btn--raised pull-right" lx-ripple>Login</button>
+                        <button type="submit" class="btn btn--m btn--blue btn--raised pull-right" lx-ripple>Login
+                        </button>
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <center><span>[[message]]</span></center>
                 </md-card-content>
             </md-card>
         </form>
