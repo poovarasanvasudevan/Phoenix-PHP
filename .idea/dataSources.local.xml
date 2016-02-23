@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - phoenix-php@localhost" uuid="2df8cff5-5693-4a5d-901b-c8bd71f549ff">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>phoenix-php.pg_catalog phoenix-php.public</schema-pattern>
+      <default-schemas>phoenix-php.pg_catalog phoenix-php.public</default-schemas>
+    </data-source>
+  </component>
+</project>

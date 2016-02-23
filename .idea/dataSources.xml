@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="105042828">
+    <data-source source="LOCAL" name="PostgreSQL - phoenix-php@localhost" uuid="2df8cff5-5693-4a5d-901b-c8bd71f549ff">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/phoenix-php</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
