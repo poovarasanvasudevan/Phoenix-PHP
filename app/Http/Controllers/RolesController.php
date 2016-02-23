@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -20,7 +21,7 @@ class RolesController extends Controller
         $role->slug = $slug;
         $role->description = $description;
 
-        if($role->save()) {
+        if ($role->save()) {
             return true;
         } else {
             return false;
@@ -35,7 +36,7 @@ class RolesController extends Controller
         $permission->slug = $slug;
         $permission->description = $description;
 
-        if($permission->save()) {
+        if ($permission->save()) {
             return true;
         } else {
             return false;
@@ -45,7 +46,12 @@ class RolesController extends Controller
 
     public function assignRole($userid, $role)
     {
-
+        $user = User::find($userid);
+        if ($user->assignRole($role)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public function assignPermission($userid, $permission)

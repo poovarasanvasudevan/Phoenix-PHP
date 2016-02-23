@@ -14,31 +14,7 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
  phoenix
  ```
      phoenix:createrole   Creates New Role
-      Enter The Role Name ?:
-      > Administrator
-
-      Enter The Slug?:
-      > admin
-
-      Enter description ?:
-      > This is an administrator role he can manages all the permission of the application,This role has all the rights to control all over the System
-
-     Role created Succesfully...
-
      phoenix:createuser   Creates new User
-      What is your abyasi Id ?:
-      > inksad408
-
-      What is your name?:
-      > Poovarasan
-
-      What is your email?:
-      > poosan9@gmail.com
-
-      Enter is your password?:
-      >
-
-     User saved Succesfully...
 
  ```
 

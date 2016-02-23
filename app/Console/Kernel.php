@@ -16,6 +16,8 @@ class Kernel extends ConsoleKernel
         // Commands\Inspire::class,
         Commands\CreateUser::class,
         Commands\CreateRole::class,
+        Commands\AssignRole::class,
+        Commands\GetRolesForUser::class,
     ];
 
     /**
