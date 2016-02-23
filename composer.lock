@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f81df5a103fbfb1654b65fe55f4eecac",
-    "content-hash": "897c258cf1e90c91f3eb2e0b0ac2e7f4",
+    "hash": "44c0d55d8d5d79782861149783488711",
+    "content-hash": "62d3f33edf50666b84eb691dc9c5e214",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -422,6 +422,53 @@
                 "tokenizer"
             ],
             "time": "2015-12-05 17:17:57"
+        },
+        {
+            "name": "kodeine/laravel-acl",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kodeine/laravel-acl.git",
+                "reference": "8a1ca6b9c7146bb0f158cc3d19170bfb2e3e7a8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kodeine/laravel-acl/zipball/8a1ca6b9c7146bb0f158cc3d19170bfb2e3e7a8e",
+                "reference": "8a1ca6b9c7146bb0f158cc3d19170bfb2e3e7a8e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kodeine\\Acl\\": "src/Kodeine/Acl"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahsen M.",
+                    "homepage": "https://github.com/kodeine",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Light-weight role-based permissions for Laravel 5 built in Auth system.",
+            "keywords": [
+                "acl",
+                "auth",
+                "eloquent",
+                "laravel",
+                "permissions",
+                "roles",
+                "security"
+            ],
+            "time": "2016-02-06 01:50:02"
         },
         {
             "name": "laravel/framework",
@@ -3288,7 +3335,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kodeine/laravel-acl": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

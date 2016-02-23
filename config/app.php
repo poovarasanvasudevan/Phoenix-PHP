@@ -149,6 +149,8 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Kodeine\Acl\AclServiceProvider::class,
+
 
         /*
          * Application Service Providers...
